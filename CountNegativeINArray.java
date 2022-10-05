@@ -20,18 +20,11 @@ public class CountNegativeINArray {
     public static int countNegatives(int[][] grid) {
         int count = 0;
         for (int[] grid1 : grid) {
-            int start = 0;
-            int end = grid1.length - 1;
-            if (start <= end) {
-                int mid = start + ( end - start ) / 2;
                 for (int j = 0; j < grid1.length; j++) {
-                    if (grid1[j] >= 0) {
-                        start = mid + 1;
-                    } else {
+                    if (grid1[j] < 0) {
                         count++;
                     }
                 }
-            }
         }
         return count;
     }
