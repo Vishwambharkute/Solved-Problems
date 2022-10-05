@@ -5,10 +5,10 @@ public class CountNegativeINArray {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         
-        System.out.println("Size");
+        System.out.println("Enter the Size of an Array");
         int size = scan.nextInt();
         
-        System.out.println("Array");
+        System.out.println("Enter the Array");
         int[][] arr = new int[size][size];
         for (int[] arr1 : arr) {
             for (int j = 0; j < arr.length; j++) {
